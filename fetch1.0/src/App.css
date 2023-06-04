@@ -1,0 +1,84 @@
+:root {
+  --color-primary: rgb(2, 2, 53);
+  --color-primary-light: rgb(6, 6, 131);
+  --color-primary-light-trans: rgb(6, 6, 131, .2);
+  --color-sec: rgb(255, 136, 0);
+  --color-white: rgb(202, 202, 238);
+}
+
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background-color: var(--color-primary);
+}
+
+.app {}
+
+/* NAVGATION BAR CSS */
+
+.nav {
+  background-color: var(--color-primary-light);
+  height: 5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav h1 {
+  color: var(--color-sec);
+  font-family: serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p.section {
+  text-align: center;
+  font-size: 2.4rem;
+  color: var(--color-white);
+}
+
+.section {
+  width: 1020px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.section article {
+  margin: 1rem 0;
+  padding: .5rem .5rem;
+  width: 100%;
+  height: fit-content;
+  background-color: var(--color-primary-light-trans);
+  border: 2px solid var(--color-white);
+  border-radius: .5rem;
+  transition: all 1s;
+}
+
+.section article:hover {
+  transform: translateY(-2px);
+  transform: scale(1.1);
+  background-color: transparent;
+}
+
+.section article h1 {
+  font-family: serif;
+  font-size: 24px;
+  color: var(--color-sec);
+  text-transform: uppercase;
+}
+
+.section article p {
+  font-size: 16px;
+  color: var(--color-white);
+}
